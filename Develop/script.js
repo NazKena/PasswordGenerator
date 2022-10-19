@@ -3,15 +3,21 @@ var generateBtn = document.querySelector("#generate");
 
 // using a cons variable as its value cannot change //
 
-const capitalletters = ["a","b","c","d","e","f","g","h","i","j,","k","l","m","n", "o","p","q","r,","s","t","u,","v","w","x","y","z"]
-const lowercaseletters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","M","N","O,","P","Q","R","S","T","U","V","W","X","Y","Z"]
-const numbers = ["0,1,2,3,4,5,6,7,8,9"]
-const specialcharacters = ["!","@","£","$","%","%","_","-","<",">",]
-
-console.log 
 
 
+const charachterAmountCL = document.getElementById("password");
+const charachterAmountLC = document.getElementById ("length");
+const charachterAmountNumbers = document.getElementById ("numbers");
+const characterAmountSymbols= document.getElementById ("special charachters");
 
+charachterAmountCL.addEventListener('input', syncCharachterAmount)
+charachterAmountLC.addEventListener('input', syncCharachterAmount)
+charachterAmountNumbers.addEventListener('input', syncCharachterAmount)
+characterAmountSymbols.addEventListener('input', syncCharachterAmount)
+
+function syncCharachterAmount(e) {
+  const value = e.target
+}
 
 
 // Write password to the #password input
